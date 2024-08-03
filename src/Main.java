@@ -49,7 +49,11 @@ public class Main {
             System.out.println(employees[i].getName());
         }
     }
-
+public static void printEmployee(){
+    for (Employee employee:employees){
+        System.out.println(employee);
+    }
+}
     public static void main(String[] args) {
 
         employees[0] = addEmployee("Скрягин Владимир Иванович", "2", 14825);
@@ -60,12 +64,10 @@ public class Main {
         employees[5] = new Employee("Капризулькина Никандра Филипповна", "2", 57399);
         employees[6] = new Employee("Вреднюкин Павел Николаевич", "1", 52458);
         employees[7] = new Employee("Хулиганкин Артем Демьянович", "5", 78545);
-        employees[8] = new Employee("Засыпалкина Софья Андреевна", "5", 95445);
-        employees[9] = new Employee("Приставалкин Андрей Сергеевич", "5", 32453);
+        employees[8] = new Employee("Засыпалкина Софья Андреевна", "4", 95445);
+        employees[9] = new Employee("Приставалкин Андрей Сергеевич", "3", 32453);
 
-        int i;
-        for (i = 0; i < employees.length; i++) ;
-        System.out.println(employees[i]);
+        printEmployee();
         System.out.println();
 
         System.out.println("Сумма затрат на ЗП сотрудников " + sumSalary());
